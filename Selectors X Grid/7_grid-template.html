@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template Shorthand</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template:
+          "header header header" 100px
+          "sidebar content content" 100px
+          / 1fr 2fr 1fr;
+      }
+      .header {
+        grid-area: header;
+        background-color: #4caf50;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: #ff5722;
+      }
+      .content {
+        grid-area: content;
+        background-color: #009688;
+      }
+      .item {
+        color: white;
+        padding: 20px;
+      }
+    </style>
+    <!-- Rows: The first row is 100px high, and the second row is 200px high.
+Columns: The grid has three columns:
+The first column (1fr): This column will take up one fraction of the available space.
+The second column (2fr): This column will take up two fractions of the available space, making it twice as wide as the first and third columns.
+The third column (1fr): This column will take up one fraction of the available space.
+Grid Areas:
+
+The grid template defines three areas: header, sidebar, and content.
+The header area spans across all three columns in the first row.
+The sidebar area spans the first column in the second row.
+The content area spans the second and third columns in the second row. -->
+  </head>
+  <body>
+    <h1>Grid Template Shorthand</h1>
+    <div class="container">
+      <div class="header item">Header</div>
+      <div class="sidebar item">Sidebar</div>
+      <div class="content item">Content</div>
+    </div>
+  </body>
+</html>

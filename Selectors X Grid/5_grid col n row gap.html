@@ -1,0 +1,47 @@
+<!--2. grid-column-gap , grid-row-gap -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column Gap and Row Gap</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Column Gap and Row Gap</h1>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 6</div>
+    </div>
+
+<!-- 
+    This code sets up a grid with three columns and two rows.
+
+grid-template-columns: repeat(3, 1fr);
+
+repeat(3, 1fr): This means "create three columns, each with a width of 1fr".
+1fr is a fractional unit, where fr stands for "fraction of the available space". In this case, each of the three columns will take up one-third of the available space.
+grid-template-rows: repeat(2, 100px);
+
+repeat(2, 100px): This means "create two rows, each with a height of 100px".
+Each row will have a fixed height of 100px. -->
+</body>
+</html>

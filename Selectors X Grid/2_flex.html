@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Properties Example</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+        }
+        /* Flex Direction */
+        .row {
+            flex-direction: row;
+        }
+        .row-reverse {
+            flex-direction: row-reverse;
+        }
+        .column {
+            flex-direction: column;
+        }
+        .column-reverse {
+            flex-direction: column-reverse;
+        }
+        /* Flex Wrap */
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+        /* Justify Content */
+        .justify-start {
+            justify-content: flex-start;
+        }
+        .justify-end {
+            justify-content: flex-end;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .justify-around {
+            justify-content: space-around;
+        }
+        .justify-evenly {
+            justify-content: space-evenly;
+        }
+        /* Align Items */
+        .align-start {
+            align-items: flex-start;
+        }
+        .align-end {
+            align-items: flex-end;
+        }
+        .align-center {
+            align-items: center;
+        }
+        .align-baseline {
+            align-items: baseline;
+        }
+        .align-stretch {
+            align-items: stretch;
+        }
+        /* Align Content */
+        .content-start {
+            align-content: flex-start;
+        }
+        .content-end {
+            align-content: flex-end;
+        }
+        .content-center {
+            align-content: center;
+        }
+        .content-between {
+            align-content: space-between;
+        }
+        .content-around {
+            align-content: space-around;
+        }
+        .content-stretch {
+            align-content: stretch;
+        }
+        /* Align Self */
+        .self-start {
+            align-self: flex-start;
+        }
+        .self-end {
+            align-self: flex-end;
+        }
+        .self-center {
+            align-self: center;
+        }
+        .self-baseline {
+            align-self: baseline;
+        }
+        .self-stretch {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Properties Example</h1>
+
+    <!-- Flex Direction -->
+    <h2>Flex Direction</h2>
+    <div class="container row">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container row-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container column-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <h2>Flex Wrap</h2>
+    <div class="container nowrap">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+    </div>
+    <div class="container wrap">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+    </div>
+    <div class="container wrap-reverse">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+    </div>
+
+    <!-- Justify Content -->
+    <h2>Justify Content</h2>
+    <div class="container justify-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container justify-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container justify-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container justify-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container justify-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container justify-evenly">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <!-- Align Items -->
+    <h2>Align Items</h2>
+    <div class="container align-start" style="height: 200px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container align-end" style="height: 200px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container align-center" style="height: 200px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <div class="container align-baseline" style="height: 200px;">
+        <div class="item" style="font-size: 10px;">Item 1</div>
+        <div class="item" style="font-size: 20px;">Item 2</div>
+        <div class="item" style="font-size: 30px;">Item 3</div>
+    </div>
+    <div class="container align-stretch" style="height: 200px;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <!-- Align Content -->
+    <h2>Align Content</h2>
+    <div class="container wrap content-start" style="height: 400px;">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+        <div class="item" style="width: 200px;">Item 4</div>
+    </div>
+    <div class="container wrap content-end" style="height: 400px;">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+        <div class="item" style="width: 200px;">Item 4</div>
+    </div>
+    <div class="container wrap content-center" style="height: 400px;">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+        <div class="item" style="width: 200px;">Item 4</div>
+    </div>
+    <div class="container wrap content-between" style="height: 400px;">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+        <div class="item" style="width: 200px;">Item 4</div>
+    </div>
+    <div class="container wrap content-around" style="height: 400px;">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+        <div class="item" style="width: 200px;">Item 4</div>
+    </div>
+    <div class="container wrap content-stretch" style="height: 400px;">
+        <div class="item" style="width: 200px;">Item 1</div>
+        <div class="item" style="width: 200px;">Item 2</div>
+        <div class="item" style="width: 200px;">Item 3</div>
+        <div class="item" style="width: 200px;">Item 4</div>
+    </div>
+
+    <!-- Align Self -->
+    <h2>Align Self</h2>
+    <div class="container" style="height: 200px;">
+        <div class="item self-start">Item 1</div>
+        <div class="item self-end">Item 2</div>
+        <div class="item self-center">Item 3</div>
+        <div class="item self-baseline" style="font-size: 30px;">Item 4</div>
+        <div class="item self-stretch">Item 5</div>
+    </div>
+
+</body>
+</html>

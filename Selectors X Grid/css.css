@@ -1,0 +1,214 @@
+
+/* Universal Selector: Applies styles to all elements */
+* {
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Type Selector: Applies styles to all <p> elements */
+h2{
+    color :  purple;
+}
+p {
+    font-size: 20px;
+    background-color: yellow;
+}
+
+/* Class Selector: Applies styles to elements with class "button" */
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* ID Selector: Applies styles to the element with ID "header" */
+#header {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+/* Attribute Selector: Applies styles to <input> elements with type "text" */
+input[type="text"] {
+    border: 1px solid black;
+    color : green;
+}
+
+/* Group Selector: Applies styles to <h1>, <h2>, and <h3> elements */
+h1,span, h2, h3 {
+    margin: 2px;
+    padding: 10px;
+    background-color: lightgrey;
+    color : red
+}
+
+/* Descendant Selector: Applies styles to <p> elements that are inside <div> elements */
+div p {
+    color: red;
+    background-color: green;
+}
+
+/* Child Selector: Applies styles to <li> elements that are direct children of <ul> elements */
+ul > li {
+    list-style: none;
+    
+}
+ul > li a {
+   text-decoration: none;
+   color:green;
+
+}
+
+/* Adjacent Sibling Selector: Applies styles to the first <p> element after each <h1> element */
+h1 + p {
+    margin-top: 10px;
+    color: rgb(241, 193, 3);
+}
+
+/* General Sibling Selector: Applies styles to all <p> elements that are siblings of <h1> elements */
+h1 ~ li {
+    color: blue;
+}
+h1  ~ span{
+      background-color: yellow;
+      color: white;
+}
+/* Pseudo-class Selector: Applies styles to <a> elements when they are hovered over */
+a:hover {
+    color: green;
+    background-color: red;
+}
+
+/* Pseudo-element Selector: Applies styles to the first line of <p> elements */
+p::first-line {
+    font-weight: bold;
+}
+
+/* Attribute Substring Selectors */
+/* Applies styles to <a> elements with href attribute starting with "https" */
+a[href^="https"] {
+    color: green;
+}
+
+/* Applies styles to <a> elements with href attribute ending with ".pdf" */
+a[href$=".pdf"] {
+    color: red;
+    background-color: green;
+}
+
+/* Applies styles to <a> elements with href attribute containing "example" */
+a[href*="example"] {
+    color: orange;
+    background-color: aqua;
+}
+
+/* :not() Selector: Applies styles to <button> elements that do not have class "primary" */
+button:not(.primary) {
+    background-color: grey;
+    color: white;
+}
+
+/* :nth-child() Selector: Applies styles to even-numbered <tr> elements */
+tr:nth-child(3) {
+    background-color: #f2f2f2;
+}
+
+/* :nth-of-type() Selector: Applies styles to the second <p> element of its type */
+p:nth-of-type(2) {
+    font-size: 18px;
+}
+
+/* :first-child Selector: Applies styles to the first <p> element of a parent */
+p:first-child {
+    font-weight: bold;
+}
+
+/* :last-child Selector: Applies styles to the last <p> element of a parent */
+p:last-child {
+    font-style: italic;
+}
+
+/* :only-child Selector: Applies styles to <div> elements that are the only child of their parent */
+div:only-child {
+    padding: 20px;
+    background-color: lightblue;
+}
+
+/* :first-of-type Selector: Applies styles to the first <h1> element of its type */
+h1:first-of-type {
+    color: purple;
+}
+
+/* :last-of-type Selector: Applies styles to the last <h1> element of its type */
+h1:last-of-type {
+    color: brown;
+}
+
+/* :empty Selector: Hides <p> elements that have no children */
+p:empty {
+    display: none;
+}
+
+/* :checked Selector: Applies styles to checked <input> elements (radio buttons, checkboxes) */
+input:checked {
+    background-color: yellow;
+}
+
+/* :disabled Selector: Applies styles to disabled <input> elements */
+input:disabled {
+    background-color: grey;
+}
+
+/* :enabled Selector: Applies styles to enabled <input> elements */
+input:enabled {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+/* :focus Selector: Applies styles to <input> elements when they are focused */
+input:focus {
+    border: 2px solid blue;
+}
+
+/* :valid Selector: Applies styles to <input> elements with a valid value */
+input:valid {
+    border: 2px solid rgb(255, 217, 0);
+}
+
+/* :invalid Selector: Applies styles to <input> elements with an invalid value */
+input:invalid {
+    border: 2px solid red;
+}
+.elements{
+    list-style: none;
+}
+.elements a{
+       text-decoration: none;
+    
+       color : black;
+       position: relative;
+       width: 100%;
+}
+.elements a{
+    padding: 0;
+}
+.elements a:hover{
+      background-color: yellow;
+      padding: 3px;
+}
+.elements a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.4s;
+}
+.elements a:hover::before{
+    top: 30px;
+
+    background-color: black;
+}

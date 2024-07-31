@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+   <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!-- Universal Selector example -->
+    <div>
+        <h1>Universal Selector</h1>
+        <p>This paragraph is styled by the universal selector.</p>
+    </div>
+
+    <!-- Type Selector example -->
+    <h2>Type Selector</h2>
+    <p>This paragraph is styled by the type selector.</p>
+
+    <!-- Class Selector example -->
+    <h2>Class Selector</h2>
+    <div class="button item h2 h4 ">
+        This div is styled by the class
+         selector.</div>
+
+    <!-- ID Selector example -->
+    <h2>ID Selector</h2>
+    <div id="header">This div is styled by the ID selector.</div>
+
+    <!-- Attribute Selector example -->
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Text input styled by attribute selector">
+
+    <!-- Group Selector example -->
+    <h2>Group Selector</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h1>hello</h1>
+
+    <!-- Descendant Selector example -->
+    <h2>Descendant Selector</h2>
+    <div>
+        <p>This paragraph is styled by the descendant selector.</p>
+    </div>
+
+    <!-- Child Selector example -->
+    <h2>Child Selector</h2>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+
+    <!-- Adjacent Sibling Selector example -->
+    <h2>Adjacent Sibling Selector</h2>
+    <h1>Heading</h1>
+    <h2>Red</h2>
+    <p>This paragraph is styled by the adjacent sibling selector.</p>
+
+     <div>
+        <h1>Hello
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </h1>
+     </div>
+    <!-- General Sibling Selector example -->
+    <h2>General Sibling Selector</h2>
+    <h1>Heading</h1>
+    <p>This paragraph is styled by the general sibling selector.</p>
+
+    <!-- Pseudo-class example -->
+    <h2>Pseudo-class Selector</h2>
+    <a href="#">Hover over this link</a>
+
+    <!-- Pseudo-element example -->
+    <h2>Pseudo-element Selector</h2>
+    <p>This paragraph has a styled first line.</p>
+
+    <!-- Attribute Substring Selectors example -->
+    <h2>Attribute Substring Selectors</h2>
+    <a href="https://example.com">Link starting with "https"</a><br>
+    <a href="file.pdf">Link ending with ".pdf"</a><br>
+    <a href="https://example.com/file.pdf">Link containing "example"</a>
+
+    <!-- :not() Selector example -->
+    <h2>:not() Selector</h2>
+
+
+
+    
+    <button class="primary">Primary Button</button>
+    <button>Secondary Button</button>
+
+    <!-- :nth-child() Selector example -->
+    <h2>:nth-child() Selector</h2>
+    <table>
+        <tr><td>Row 1</td></tr>
+        <tr><td>Row 2</td></tr>
+        <tr><td>Row 3</td></tr>
+        <tr><td>Row 4</td></tr>
+    </table>
+
+    <!-- :nth-of-type() Selector example -->
+    <h2>:nth-of-type() Selector</h2>
+    <p>First paragraph</p>
+    <p>Second paragraph (styled by :nth-of-type)</p>
+    <p>Third paragraph</p>
+
+    <!-- :first-child Selector example -->
+    <h2>:first-child Selector</h2>
+    <p>First paragraph (styled by :first-child)</p>
+    <p>Second paragraph</p>
+
+    <!-- :last-child Selector example -->
+    <h2>:last-child Selector</h2>
+    <p>First paragraph</p>
+    <p>Second paragraph (styled by :last-child)</p>
+
+    <!-- :only-child Selector example -->
+    <h2>:only-child Selector</h2>
+    <div>Only child div (styled by :only-child)</div>
+
+    <!-- :first-of-type Selector example -->
+    <h2>:first-of-type Selector</h2>
+    <h1>First heading (styled by :first-of-type)</h1>
+    <h1>Second heading</h1>
+
+    <!-- :last-of-type Selector example -->
+    <h2>:last-of-type Selector</h2>
+    <h1>First heading</h1>
+    <h1>Second heading (styled by :last-of-type)</h1>
+
+    <!-- :empty Selector example -->
+    <h2>:empty Selector</h2>
+    <p>This paragraph is not empty.</p>
+    <p></p>
+
+    <!-- :checked Selector example -->
+    <h2>:checked Selector</h2>
+    <input type="checkbox" checked> Checked checkbox
+
+    <!-- :disabled Selector example -->
+    <h2>:disabled Selector</h2>
+    <input type="text" disabled value="Disabled input">
+
+    <!-- :enabled Selector example -->
+    <h2>:enabled Selector</h2>
+    <input type="text" value="Enabled input">
+
+    <!-- :focus Selector example -->
+    <h2>:focus Selector</h2>
+    <input type="text" placeholder="Focus on this input">
+
+    <!-- :valid Selector example -->
+    <h2>:valid Selector</h2>
+    <input type="email" value="example@example.com">
+
+    <!-- :invalid Selector example -->
+    <h2>:invalid Selector</h2>
+    <input type="email" value="invalid email">
+
+
+    <div class="elements">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Home</a></li>
+    </div>
+
+    <ul>
+        <li><a href="https">Home</a></li>
+        <li><a href="wwww.">Home</a></li>
+        <li><a href="mailto">Home</a></li>
+        <li><a href=".pdf">Home</a></li>
+        <li><a href="#">Home</a></li>
+    </ul>
+
+
+        <div>
+                <h1>Hello</h1>
+                <p>paragraph</p>
+                <span>Hi</span>
+        </div>
+</body>
+</html>

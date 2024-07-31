@@ -1,0 +1,49 @@
+<!-- 3. grid-template-areas -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template Areas</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 200px;
+
+
+        
+        grid-template-areas:
+          "header header header"
+          "sidebar content content";
+        
+      }
+      .header {
+        grid-area: header;
+        background-color: #4caf50;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: #ff5722;
+      }
+      .content {
+        grid-area: content;
+        background-color: #009688;
+      }
+      .item {
+        color: white;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid Template Areas</h1>
+    <div class="container">
+            <div class="header">Header</div>
+            <div class="sidebar">
+                      <div class="item">Item 1</div>
+             </div>
+             <div class="content">Content</div>
+    </div>
+  </body>
+</html>
